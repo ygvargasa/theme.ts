@@ -1,8 +1,83 @@
 import { createTheme } from "@mui/material/styles";
 
+declare module '@mui/material/styles' {
+  interface Palette {
+    teal: Palette['primary'];
+    lime: Palette['primary'];
+    darkGreen: Palette['primary'];
+    lightGreen: Palette['primary'];
+    aqua: Palette['primary'];
+  }
+
+  interface PaletteOptions {
+    teal?: PaletteOptions['primary'];
+    lime?: PaletteOptions['primary'];
+    darkGreen?: PaletteOptions['primary'];
+    lightGreen?: PaletteOptions['primary'];
+    aqua?: PaletteOptions['primary'];
+  }
+}
+
+// Extend the Button interface if you want to use these colors in the "color" prop
+declare module "@mui/material/Button" {
+  interface ButtonPropsColorOverrides {
+    teal: true;
+    lime: true;
+    darkGreen: true;
+    lightGreen: true;
+    aqua: true;
+  }
+}
+
 const theme = createTheme({
+  palette: {
+    teal: {
+      light: '#00b3a7',
+      main: '#00857c',
+      dark: '#005c54',
+      contrastText: '#FEFEFE',
+    },
+    lime: {
+      light: '#b1de63',
+      main: '#a2d846',
+      dark: '#90ca2b',
+      contrastText: '#244200',
+    },
+    darkGreen: {
+      main: '#6c9e00',
+      dark: '#507500',
+      contrastText: '#F7FFE7',
+    },
+    lightGreen: {
+      main: '#d0ee59',
+      dark: '#c5ea34',
+      contrastText: '#425900',
+    },
+    aqua: {
+      main: '#a4eac3',
+      dark: '#82e3ae',
+      contrastText: '#003d39',
+    },
+    error: {
+      main: '#d32f2f',
+      contrastText: '#FFFFFF',
+    },
+    warning: {
+      main: '#ed6c02',
+      contrastText: '#ffffff',
+    },
+    success: {
+      main: '#2e7d32',
+      contrastText: '#FFFFFF',
+    },
+    info: {
+      main: '#00857C',
+      contrastText: '#FFFFFF',
+    },
+  },
+
   typography: {
-    fontFamily: '"Inter", sans-serif',
+    fontFamily: 'Inter, Outfit, sans-serif',
     h1: {
       fontSize: "32px",
       lineHeight: "40px",
@@ -51,7 +126,7 @@ const theme = createTheme({
     button: {
       fontSize: "14px",
       lineHeight: "20px",
-      fontWeight: 600,
+      fontWeight: 500,
       textTransform: "none",
     },
   },
@@ -79,101 +154,6 @@ const theme = createTheme({
       md: 1024,
       lg: 1440,
       xl: 1920,
-    },
-  },
-
-  colorSchemes: {
-    light: {
-      palette: {
-        background: {
-          default: "#FEFEFE", // #F7F7F7
-          paper: "#FFFFFF",
-        },
-        text: {
-          primary: "#1A1A1A",
-          secondary: "#666666",
-          disabled: "#999999",
-        },
-        primary: {
-          main: "#A3D848",
-          light: "#D0ED58",
-          dark: "#6C9E00",
-          contrastText: "#1A1A1A",
-        },
-        secondary: {
-          main: "#00B3A7",
-          light: "#A2EAC3",
-          dark: "#009990",
-          contrastText: "#FFFFFF",
-        },
-        error: {
-          main: "#D92D20",
-          light: "#FEE4E2",
-          contrastText: "#FFFFFF",
-        },
-        warning: {
-          main: "#F79009",
-          light: "#FEF0C7",
-          contrastText: "#1A1A1A",
-        },
-        success: {
-          main: "#6C9E00",
-          light: "#EAF7D6",
-          contrastText: "#FFFFFF",
-        },
-        info: {
-          main: "#00B3A7",
-          light: "#E0F7F5",
-          contrastText: "#FFFFFF",
-        },
-        divider: "#E6E6E6",
-      },
-    },
-    dark: {
-      palette: {
-        background: {
-          default: "#1A1A1A",
-          paper: "#333333",
-        },
-        text: {
-          primary: "#FEFEFE",
-          secondary: "#999999",
-          disabled: "#CCCCCC",
-        },
-        primary: {
-          main: "#A3D848",
-          light: "#D0ED58",
-          dark: "#6C9E00",
-          contrastText: "#1A1A1A",
-        },
-        secondary: {
-          main: "#00B3A7",
-          light: "#A2EAC3",
-          dark: "#009990",
-          contrastText: "#FFFFFF",
-        },
-        error: {
-          main: "#D92D20",
-          light: "#FEE4E2",
-          contrastText: "#FFFFFF",
-        },
-        warning: {
-          main: "#F79009",
-          light: "#FEF0C7",
-          contrastText: "#1A1A1A",
-        },
-        success: {
-          main: "#6C9E00",
-          light: "#EAF7D6",
-          contrastText: "#FFFFFF",
-        },
-        info: {
-          main: "#00B3A7",
-          light: "#E0F7F5",
-          contrastText: "#FFFFFF",
-        },
-        divider: "#E6E6E6",
-      },
     },
   },
 });
