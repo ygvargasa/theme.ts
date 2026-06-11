@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+  /* 
+    -- COLORS --
+  */
+
+  /* Primary — Lime */
+  --color-primary: #a3d848;
+  --color-primary-hover: #6c9e00;
+  --color-primary-light: #d0ed58;
+  --color-primary-contrast: #1a1a1a;
+
+  /* Secondary — Turquoise */
+  --color-secondary: #00b3a7;
+  --color-secondary-hover: #009990;
+  --color-secondary-light: #a2eac3;
+  --color-secondary-contrast: #ffffff;
+
+  /* Supporting colors */
+  --color-light-green: #d0ed58;
+  --color-dark-green: #6c9e00;
+  --color-aqua: #a2eac3;
+
+  /* COLORS — NEUTRALS */
+  --color-white: #ffffff;
+  --color-surface: #f7f7f7;
+  --color-gray-100: #e6e6e6;
+  --color-gray-200: #cccccc;
+  --color-gray-300: #b3b3b3;
+  --color-gray-400: #999999;
+  --color-gray-500: #808080;
+  --color-gray-600: #666666;
+  --color-gray-700: #4d4d4d;
+  --color-gray-800: #333333;
+  --color-gray-900: #1a1a1a;
+
+  /* COLORS — SEMANTIC */
+  --color-bg-default: #ffffff;
+  --color-bg-subtle: #f7f7f7;
+  --color-bg-soft: #e0f7f5;
+
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-text-muted: #999999;
+  --color-text-on-dark: #ffffff;
+
+  --color-border-soft: #e6e6e6;
+  --color-border-default: #cccccc;
+  --color-border-active: #00b3a7;
+  --color-border-error: #d92d20;
+
+  --color-error: #d92d20;
+  --color-error-soft: #fee4e2;
+
+  --color-warning: #f79009;
+  --color-warning-soft: #fef0c7;
+
+  --color-success: #6c9e00;
+  --color-success-soft: #eaf7d6;
+
+  --color-info: #00b3a7;
+  --color-info-soft: #e0f7f5;
+
+  --color-disabled-bg: #e6e6e6;
+  --color-disabled-text: #999999;
+
+  /* 
+    -- TYPOGRAPHY --
+  */
+
+  --font-family-primary: "Inter", "Outfit", "Volksans", "Getboreg", sans-serif;
+
+  /* Font sizes */
+  --text-h1: 32px;
+  --text-h2: 24px;
+  --text-h3: 20px;
+  --text-h4: 18px;
+  --text-h5: 16px;
+  --text-h6: 14px;
+  --text-body: 16px;
+  --text-body-small: 14px;
+  --text-caption: 12px;
+  --text-label: 14px;
+  --text-button-sm: 14px;
+  --text-button-md: 16px;
+
+  /* Line heights */
+  --line-h1: 40px;
+  --line-h2: 32px;
+  --line-h3: 28px;
+  --line-h4: 24px;
+  --line-h5: 24px;
+  --line-h6: 20px;
+  --line-body: 24px;
+  --line-body-small: 20px;
+  --line-caption: 16px;
+  --line-label: 20px;
+  --line-button: 20px;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* 
+    -- SPACING --
+  */
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 48px;
+  --spacing-4xl: 64px;
+
+  --z-base: 1;
+  --z-header: 100;
+  --z-dropdown: 200;
+  --z-overlay: 500;
+  --z-drawer: 800;
+  --z-modal: 1000;
+  --z-toast: 1200;
+
+  /* Border radius */
+  --border-width-base: 1px;
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 100px;
+
+  /* Shadow / Elevation */
+  --shadow-0: none;
+  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-2: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-3: 0 8px 20px rgba(0, 0, 0, 0.10);
+  --shadow-4: 0 12px 28px rgba(0, 0, 0, 0.12);
+  --shadow-5: 0 16px 40px rgba(0, 0, 0, 0.16);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+}
+
