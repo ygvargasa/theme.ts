@@ -8,7 +8,7 @@ declare module '@mui/material/styles' {
     lightGreen: Palette['primary'];
     darkTeal: Palette['primary'];
     aqua: Palette['primary'];
-    neutral: Palette['primary'];
+    neutral: Palette['grey'];
   }
 
   interface PaletteOptions {
@@ -18,7 +18,7 @@ declare module '@mui/material/styles' {
     darkGreen?: PaletteOptions['primary'];
     lightGreen?: PaletteOptions['primary'];
     aqua?: PaletteOptions['primary'];
-    neutral?: PaletteOptions['primary'];
+    neutral?: PaletteOptions['grey'];
   }
 }
 
@@ -50,9 +50,9 @@ const theme = createTheme({
       contrastText: '#244200',
     },
     darkTeal: {
-      light: 'hsl(176, 100%, 24%)',
-      main: 'hsl(176, 100%, 16%)',
-      dark: 'hsl(176, 100%, 8%)',
+      light: '#007a72',
+      main: '#00524c',
+      dark: '#002926',
       contrastText: '#FEFEFE',
     },
     darkGreen: {
