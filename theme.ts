@@ -145,16 +145,6 @@ const theme = createTheme({
     borderRadius: 8,
   },
 
-  shadows: [
-    "none",
-    "0 1px 3px rgba(0, 0, 0, 0.05)",
-    "0 4px 12px rgba(0, 0, 0, 0.08)",
-    "0 8px 20px rgba(0, 0, 0, 0.10)",
-    "0 12px 28px rgba(0, 0, 0, 0.12)",
-    "0 16px 40px rgba(0, 0, 0, 0.16)",
-    ...Array(19).fill("0 16px 40px rgba(0, 0, 0, 0.16)"),
-  ] as any,
-
   breakpoints: {
     values: {
       xs: 0,
