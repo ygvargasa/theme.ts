@@ -6,15 +6,19 @@ declare module '@mui/material/styles' {
     lime: Palette['primary'];
     darkGreen: Palette['primary'];
     lightGreen: Palette['primary'];
+    darkTeal: Palette['primary'];
     aqua: Palette['primary'];
+    neutral: Palette['primary'];
   }
 
   interface PaletteOptions {
     teal?: PaletteOptions['primary'];
     lime?: PaletteOptions['primary'];
+    darkTeal?: PaletteOptions['primary'];
     darkGreen?: PaletteOptions['primary'];
     lightGreen?: PaletteOptions['primary'];
     aqua?: PaletteOptions['primary'];
+    neutral?: PaletteOptions['primary'];
   }
 }
 
@@ -23,9 +27,11 @@ declare module "@mui/material/Button" {
   interface ButtonPropsColorOverrides {
     teal: true;
     lime: true;
+    darkTeal: true;
     darkGreen: true;
     lightGreen: true;
     aqua: true;
+    neutral: true;
   }
 }
 
@@ -43,10 +49,16 @@ const theme = createTheme({
       dark: '#90ca2b',
       contrastText: '#244200',
     },
+    darkTeal: {
+      light: 'hsl(176, 100%, 24%)',
+      main: 'hsl(176, 100%, 16%)',
+      dark: 'hsl(176, 100%, 8%)',
+      contrastText: '#FEFEFE',
+    },
     darkGreen: {
       main: '#6c9e00',
       dark: '#507500',
-      contrastText: '#F7FFE7',
+      contrastText: '#FEFEFE',
     },
     lightGreen: {
       main: '#d0ee59',
@@ -58,21 +70,17 @@ const theme = createTheme({
       dark: '#82e3ae',
       contrastText: '#003d39',
     },
-    error: {
-      main: '#d32f2f',
-      contrastText: '#FFFFFF',
-    },
-    warning: {
-      main: '#ed6c02',
-      contrastText: '#ffffff',
-    },
-    success: {
-      main: '#2e7d32',
-      contrastText: '#FFFFFF',
-    },
-    info: {
-      main: '#00857C',
-      contrastText: '#FFFFFF',
+    neutral: {
+      50: '#FEFEFE',
+      100: '#E6E6E6',
+      200: '#CCCCCC',
+      300: '#B3B3B3',
+      400: '#999999',
+      500: '#808080',
+      600: '#666666',
+      700: '#4D4D4D',
+      800: '#333333',
+      900: '#1A1A1A',
     },
   },
 
