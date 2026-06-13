@@ -50,10 +50,54 @@ const palette = {
     secondary: colors.neutral[700],
     disabled: "#808080CC"
   },
-  teal: {
+  background: {
+    default: colors.neutral[50],
+    paper: colors.neutral[50],
+  },
+  divider: colors.neutral["100"],
+
+  primary: {
+    main: colors.teal[300],
+    contrastText: colors.neutral["50"],
+  },
+  secondary: {
+    main: colors.lime[300],
+    contrastText: colors.neutral["50"],
+  },
+  success: {
+    light: colors.lime[400],
+    main: colors.status.success,
+    dark: colors.lime[600],
+    contrastText: colors.neutral["50"],
+  },
+  info: {
+    light: "#1DC9BE",
+    main: colors.status.info,
+    dark: colors.teal[400],
+    contrastText: colors.neutral["50"],
+  },
+  warning: {
+    light: "#FFA436",
+    main: colors.status.warning,
+    dark: "#ED6C02",
+    contrastText: colors.neutral["50"],
+  },
+  error: {
+    main: colors.status.error,
+    dark: "#A1000A",
+    contrastText: colors.neutral["50"],
+  },
+
+  turquoise: {
     light: colors.teal[100],
     main: colors.teal[300],
     dark: colors.teal[400],
+    contrastText: "#002926",
+  },
+  teal: {
+    light: colors.teal[300],
+    main: colors.teal[400],
+    dark: colors.teal[500],
     contrastText: colors.neutral[50],
   },
   darkTeal: {
@@ -77,8 +121,8 @@ const palette = {
   lightGreen: {
     light: colors.lime[50],
     main: colors.lime[200],
-    dark: "#B7D832",
-    contrastText: "#425900",
+    dark: "#A5C331",
+    contrastText: "#394700",
   },
   darkGreen: {
     light: colors.lime[500],
