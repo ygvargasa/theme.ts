@@ -12,7 +12,7 @@ declare module "@mui/material/styles" {
     turquoise: Palette["primary"];
     lime: Palette["primary"];
     lightGreen: Palette["primary"];
-    darkGreen: Palette["primary"];    
+    darkGreen: Palette["primary"];
     teal: Palette["primary"];
     darkTeal: Palette["primary"];
     aqua: Palette["primary"];
@@ -34,11 +34,11 @@ declare module "@mui/material/styles" {
 declare module "@mui/material/Button" {
   interface ButtonPropsColorOverrides {
     turquoise: true;
-    teal: true;
     lime: true;
-    darkTeal: true;
-    darkGreen: true;
     lightGreen: true;
+    darkGreen: true;
+    teal: true;
+    darkTeal: true;
     aqua: true;
     neutral: true;
   }
@@ -102,7 +102,7 @@ const theme = createTheme({
       paper: colors.neutral[50],
     },
     divider: colors.neutral["100"],
-  
+
     primary: {
       main: colors.teal[300],
       contrastText: colors.neutral["50"],
@@ -134,7 +134,7 @@ const theme = createTheme({
       dark: "#A1000A",
       contrastText: colors.neutral["50"],
     },
-  
+
     turquoise: {
       light: colors.teal[100],
       main: colors.teal[300],
@@ -193,7 +193,7 @@ const theme = createTheme({
 
   typography: {
     fontFamily: "Inter, Outfit, Volksans, Getboreg, sans-serif",
-    
+
     h1: {
       fontSize: "32px",
       lineHeight: "40px",
