@@ -1,7 +1,5 @@
-
-
 const typography = {
-  fontFamily: "Inter, Volksans, Getboreg, Outfit, sans-serif",
+  fontFamily: "Inter, Outfit, Volksans, Getboreg, sans-serif",
 
   h1: {
     fontSize: "32px",
@@ -52,7 +50,7 @@ const typography = {
     fontSize: "14px",
     lineHeight: "20px",
     fontWeight: 500,
-    textTransform: "none",
+    textTransform: "capitalize",
   },
 };
 
