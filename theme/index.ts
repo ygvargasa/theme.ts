@@ -12,29 +12,31 @@ Colocarlo en un archivo CSS que se importe de manera directa a main.tsx
 
 declare module "@mui/material/styles" {
   interface Palette {
-    teal: Palette["primary"];
+    turquoise: Palette["primary"];
     lime: Palette["primary"];
-    darkGreen: Palette["primary"];
     lightGreen: Palette["primary"];
+    darkGreen: Palette["primary"];    
+    teal: Palette["primary"];
     darkTeal: Palette["primary"];
     aqua: Palette["primary"];
     neutral: Palette["grey"];
   }
 
   interface PaletteOptions {
-    teal?: PaletteOptions["primary"];
+    turquoise?: PaletteOptions["primary"];
     lime?: PaletteOptions["primary"];
-    darkTeal?: PaletteOptions["primary"];
-    darkGreen?: PaletteOptions["primary"];
     lightGreen?: PaletteOptions["primary"];
+    darkGreen?: PaletteOptions["primary"];
+    teal?: PaletteOptions["primary"];
+    darkTeal?: PaletteOptions["primary"];
     aqua?: PaletteOptions["primary"];
     neutral?: PaletteOptions["grey"];
   }
 }
 
-// Extend the Button interface if you want to use these colors in the "color" prop
 declare module "@mui/material/Button" {
   interface ButtonPropsColorOverrides {
+    turquoise: true;
     teal: true;
     lime: true;
     darkTeal: true;
